@@ -430,3 +430,40 @@ footer p{
     letter-spacing: 1px;
 
 }
+
+#blob{
+    background-color: black;
+    height: 200px;
+    aspect-ratio: 1;
+    
+    position: absolute;
+    left: 50%;
+    top:50%;
+    translate: -50% -50%;
+    border-radius: 50%;
+    background: linear-gradient(
+        to right,
+        rgb(255, 146, 127),
+        rgb(216, 112, 112)
+    );
+    animation: rotate 20s infinite;
+    filter: blur(100px);
+    
+}
+
+
+@keyframes rotate {
+    from{
+        rotate: 0deg;
+    }
+
+    50%{
+        scale: 1 1.5;
+    }
+
+    to{
+        rotate: 360deg;
+    }
+
+    
+}
