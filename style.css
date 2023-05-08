@@ -75,7 +75,7 @@ section{
     width: 100%;
     position: relative;
     background: url(./hero2.jpg);
-    background-size: 30% 70%;
+    background-size: 25% 60%;
     background-repeat:no-repeat;
     background-position: 80%;
     display: flex;
@@ -141,7 +141,7 @@ header.sticky{
     background-image: url(./about1.jpg);
     background-repeat: no-repeat;
     background-position: 20%;
-    background-size: 25% 80%;
+    background-size: 20% 70%;
 }
 
 .about-text h4{
