@@ -67,27 +67,55 @@ header{
 }
 
 section{
-    padding: 160px 16% 90px;
+    padding: 120px 16% 90px;
 }
 
 .home{
-    height: 100vh;
+    padding-top: 100px;
+    height: 100%;
     width: 100%;
-    background: url(./hero2.jpg);
+    /* background: url(./hero2.jpg);
     background-size: 25% 65%;
     background-repeat:no-repeat;
-    background-position: 80%; 
+    background-position: 80%;  */
     position: relative;
-    display: flex;
+    /* display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow: hidden; */
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 3rem;    
 
 }
 
+#home-img img{
+    height: auto;
+    width: 100%;
+}
+/* 
+@media screen and (max-width : 700px) {
+    .home{
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
 
-/* .home-img{
-    flex-grow: 2;
+    #home-img{
+        height: 50vh;
+        width: auto;
+       
+    }
 } */
+
+
 
 .home-text h1{
     margin: 20px 0;
@@ -143,7 +171,7 @@ header.sticky{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    gap: 2rem;
+    gap: 3rem;
     /* background-image: url(./about1.jpg);
     background-repeat: no-repeat;
     background-position: 20%;
@@ -519,7 +547,7 @@ footer p{
         padding: 70px 3% 60px;
     }
     .home{
-        height: 85vh;
+        height: 100vh;
     }
     .about{
         grid-template-columns: 1fr;
