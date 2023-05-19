@@ -73,16 +73,21 @@ section{
 .home{
     height: 100vh;
     width: 100%;
-    position: relative;
     background: url(./hero2.jpg);
-    background-size: 20% 60%;
+    background-size: 25% 65%;
     background-repeat:no-repeat;
-    background-position: 80%;
+    background-position: 80%; 
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: flex-start;
 
 }
+
+
+/* .home-img{
+    flex-grow: 2;
+} */
 
 .home-text h1{
     margin: 20px 0;
@@ -91,6 +96,7 @@ section{
     line-height: 1.1;
     letter-spacing: 2px;
 }
+
 
 span{
     color: var(--main-col);
@@ -138,10 +144,10 @@ header.sticky{
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     gap: 2rem;
-    background-image: url(./about1.jpg);
+    /* background-image: url(./about1.jpg);
     background-repeat: no-repeat;
     background-position: 20%;
-    background-size: 20% 70%;
+    background-size: 20% 70%; */
 }
 
 .about-text h4{
@@ -176,7 +182,8 @@ header.sticky{
 }
 
 .about-img img{
-    height:auto
+    height:auto;
+    width: 100%;
 }
 
 .main-text{
@@ -295,10 +302,9 @@ header.sticky{
 }
 .qual_data{
     display: grid;
-    grid-template-columns: 1fr max-content 1fr;
+    grid-template-columns: 0.5fr max-content 0.5fr;
     column-gap: 1rem;
     line-height: 25px;
-    padding-top: 30px;
     background-color: var(--other-col);
     padding-left: 150px;
     padding-bottom: 30px;
@@ -431,6 +437,23 @@ footer p{
 
 }
 
+
+.top{
+    position: fixed;
+    bottom: 2.1rem;
+    right: 2.1rem;
+}
+
+.top i{
+    color: var(--text-col);
+    background: var(--main-col);
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 0.5rem;
+}
+/*-------------------- Cool Effects or FX hehehehehhe ---------------------*/
+
+
 #blob{
     background-color: black;
     height: 200px;
@@ -447,7 +470,7 @@ footer p{
         rgb(216, 112, 112)
     );
     animation: rotate 20s infinite;
-    filter: blur(100px);
+    filter: blur(150px);
     
 }
 
@@ -466,4 +489,77 @@ footer p{
     }
 
     
+}
+
+/* ---------------------Responsive Design hehehehe --------------------------*/
+
+
+@media (max-width: 1325px){
+
+    header{
+        padding: 16px 3%;
+    }
+    header.sticky{
+        padding: 8px 3%;
+    }
+    section{
+        padding: 130px 3% 60px;
+    }
+}
+
+
+@media (max-width: 970px){
+
+    :root{
+        --h1-font: 4.2rem;
+        --h2-font: 2.9rem;
+        --p-font: 1rem;
+    }
+    section{
+        padding: 70px 3% 60px;
+    }
+    .home{
+        height: 85vh;
+    }
+    .about{
+        grid-template-columns: 1fr;
+
+    }
+
+   
+    .contact{
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media (max-width: 830px){
+    #menu-icon{
+        display: block;
+    }
+    .navbar{
+        position: absolute;
+        top: -600px;
+        right: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        background: #12141c;
+        text-align: left;
+        transition: all 0.4s ease;
+    }
+    .navbar a{
+        display: block;
+        padding: 1rem;
+        margin: 1rem;
+    }
+
+    .navbar.active{
+        top: 100%;
+    }
+
+    :root{
+        --h1-font: 3.7rem;
+        --h2-font: 2.7rem;
+    }
 }
