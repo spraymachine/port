@@ -71,7 +71,7 @@ section{
 }
 
 .home{
-    padding-top: 100px;
+    padding-top: 200px;
     height: 100%;
     width: 100%;
     /* background: url(./hero2.jpg);
@@ -87,16 +87,16 @@ section{
     overflow: hidden; */
 
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
     align-items: center;
+    text-align: right;
     gap: 3rem;    
 
 }
-
+/* 
 #home-img img{
     height: auto;
     width: 100%;
-}
+} */
 /* 
 @media screen and (max-width : 700px) {
     .home{
