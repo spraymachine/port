@@ -17,3 +17,27 @@ document.body.onpointermove = event => {
 
     }, {duration: 3000, fill: "forwards"})
 }
+
+// Responsive menu Code
+
+let menu = document.querySelector('#menu-icon');
+let navbar = document.querySelector('.navbar');
+
+menu.onclick = () => {
+    menu.classList.toggle('bx-x');
+    navbar.classList.toggle('active');
+};
+
+window.onscroll = () => {
+    menu.classList.remove('bx-x');
+    navbar.classList.remove('active');
+}
+
+const sr = ScrollReveal ({
+    distance: '25px',
+    duration: 2500,
+    reset: true
+
+})
+
+sr.reveal('.home-text', {delay:190, origin: 'bottom'})
