@@ -86,7 +86,6 @@ section{
     flex-wrap: wrap;
     overflow: hidden; */
 
-    display: grid;
     align-items: center;
     text-align: right;
     gap: 3rem;    
